@@ -11,6 +11,7 @@
 3. 配置具体流程：
     - ```dd if=/dev/zero of=/swapfile bs=1M count=512 status=progress``` : swap为512M；
     - ```chmod 600 /swapfile``` : 设置权限；
+    - ```mkswap /swapfile``` : 格式化 swap；
     - ```swapon /swapfile``` : 启用 swap；
     - ```nano /etc/fstab``` : 修改 fstab 实现开机启用 swap；
     - ```/swapfile  none    swap    defaults    0   0```
